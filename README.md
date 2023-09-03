@@ -120,14 +120,17 @@ and share them in our discussion.
 Python has pretty helpful error messages. 
 When you get an error, read them carefully. 
 
-- What error do you get?
+- What error do you get? ERROR - ERROR while P1 inserting pet Buddy: database is locked
 
 ### Database Is Locked Error
 
 Do a web search on the sqlite3 'database is locked' error.
 
-- What do you learn?
+- What do you learn? It means Database is locked" means that some other connection has an active connection
 - Once a process fails, it crashes the main process and everything stops. 
+This can happen when multiple processes or threads try to access the same database file at the same time12. There are a few possible solutions to fix this error:
+
+You can create a backup of the database, which will have no locks on it, and then replace the original database with the backup copy
 
 ### Deadlock
 
